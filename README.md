@@ -25,6 +25,6 @@ Here the video is dubbed into differnt languages. Examples are above.
 
 Right now working on:
 ![image](https://user-images.githubusercontent.com/45879596/228120362-2c26149a-60e3-4b69-b6cb-1f902b9eddb9.png)
-This is topic identification of a perticular video using NLP.
+This is topic identification of a particular video using NLP.
 
 
