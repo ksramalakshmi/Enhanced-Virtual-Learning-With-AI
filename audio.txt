@@ -1,0 +1,10 @@
+What is machine learning? In this video, we will try to define what it is, and also try to give you a sense of when you want to use machine learning.
+Even among machine learning practitioners, there isn't a well-accepted definition of what is and what isn't machine learning.
+But let me show you a couple of examples of the ways that people have tried to define it.
+Here's the definition of what is machine learning that is due to Arthur Samuel.
+He defined machine learning as the field of study that gives computers the ability to learn without being explicitly programmed.
+Samuel's claim to fame was that back in the 1950s, he wrote a checkers playing program.
+And the amazing thing about this checkers playing program was that Arthur Samuel himself wasn't a very good checkers player.
+But what he did was he had the program play tens of thousands of games against itself.
+And by watching what sort of board positions tended to lead to wins, and what sort of board positions tended to lead to losses,
+the checkers playing program learned over time what are good board positions and what are bad board positions.
