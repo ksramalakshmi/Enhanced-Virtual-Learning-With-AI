@@ -9,7 +9,7 @@ Our idea aims to address the vernacular gap that exists in current education and
 2. Run all the cells in Terminal.ipynb
 3. Click on the hosted link to open the streamlit app
 
-PDf Interpreter to vurnacular languages:
+PDf Interpreter to vernacular languages:
 
 ![WhatsApp Image 2023-03-28 at 08 32 33](https://user-images.githubusercontent.com/45879596/228118300-44d6fd7b-ffc9-4175-a3c9-972f2f3e1693.jpg)
 
