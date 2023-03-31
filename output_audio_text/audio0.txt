@@ -1,0 +1,4 @@
+What is machine learning? In this video, we will try to define what it is, and also try to give you a sense of when you want to use machine learning.
+Even among machine learning practitioners, there isn't a well-accepted definition of what is and what isn't machine learning.
+But let me show you a couple of examples of the ways that people have tried to define it.
+Here's the definition of machine learning.

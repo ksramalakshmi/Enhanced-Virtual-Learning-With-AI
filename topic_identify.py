@@ -8,15 +8,12 @@ from pathlib import Path
 import numpy as np 
 import pandas as pd
 import nltk
-nltk.download('stopwords')
-nltk.download('punkt')
 from nltk.corpus import stopwords
 from rake_nltk import Rake
 
-def get_topics(videoFile):
-    # full_video = "/content/drive/MyDrive/video.mp4"
-    full_video = videoFile
-    
+def get_topics(full_video):
+    nltk.download('stopwords')
+    nltk.download('punkt')
     current_duration = VideoFileClip(full_video).duration
     divide_into_count = 3
     count=0
@@ -26,7 +23,7 @@ def get_topics(videoFile):
         clip = VideoFileClip(full_video).subclip(current_duration-single_duration, current_duration)
         current_duration -= single_duration
         current_video = f"{str(count)}.mp4"
-        clip.to_videofile(current_video, codec="libx264", temp_audiofile='temp-audio.m4a', remove_temp=True, audio_codec='aac')
+        clip.resize(width=480).write_videofile(current_video, codec="libx264", temp_audiofile='temp-audio.m4a', remove_temp=True, audio_codec='aac', threads = 15)
         count=count+1
 
     directory = '/content/'
@@ -41,9 +38,10 @@ def get_topics(videoFile):
     for i in range(3):
         os.system("whisper {} --model medium.en".format("audio"+ str(i)+".wav"))
         os.system("cp {} {}".format("/content/"+ str(i)+".mp4", "/content/mydrive/MyDrive/Krypthon-codes/output_videos/"+str(i)+".mp4"))
+        os.system("cp {} {}".format("/content/audio"+ str(i)+".txt", "/content/mydrive/MyDrive/Krypthon-codes/output_videos/audio"+str(i)+".txt"))
         
     d={}
-    directory = '/content/'
+    directory = '/content/mydrive/MyDrive/Krypthon-codes/output_audio_text'
     pathlist = Path(directory).glob('*.txt')
     count=0
     for path in pathlist:

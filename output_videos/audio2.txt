@@ -1,0 +1,5 @@
+Arthur Samuel himself wasn't a very good checkers player, but what he did was he had the program
+play tens of thousands of games against itself, and by watching what sort of board positions
+tended to lead to wins, and what sort of board positions tended to lead to losses, the checkers
+playing program learned over time what are good board positions and what are bad board
+positions, and

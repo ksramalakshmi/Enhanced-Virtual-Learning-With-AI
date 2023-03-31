@@ -1,0 +1,9 @@
+of what is machine learning that is due to Arthur Samuel.
+He defined machine learning as the
+field of study that gives
+computers the ability to learn
+without being explicitly programmed.
+Samuel's claim to fame was
+that back in the 1950s, he wrote a Chequers playing program.
+And the amazing thing about
+this Chequers playing program was that

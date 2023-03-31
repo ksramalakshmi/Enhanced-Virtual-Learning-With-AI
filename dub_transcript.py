@@ -5,20 +5,13 @@ import sys
 from deep_translator import GoogleTranslator
 from gtts import gTTS
 from moviepy.editor import VideoFileClip, AudioFileClip, CompositeAudioClip
-import argparse
-
 
 def dub(source, lang):
-    # video = AudioSegment.from_file("/content/drive/MyDrive/video.mp4", format="mp4")
-    video = AudioSegment.from_file(source, format="mp4")
-    audio = video.set_channels(1).set_frame_rate(16000).set_sample_width(4)
-    audio.export("/content/mydrive/MyDrive/Krypthon-codes/audio.wav", format="wav")
-    os.system('whisper "/content/mydrive/MyDrive/Krypthon-codes/audio.wav" --model medium.en')
     # translated = GoogleTranslator(source='english', target='hindi').translate_file('/content/audio.txt')
     if lang == 'ta':
-        translated = GoogleTranslator(source='english', target='tamil').translate_file('/content/audio.txt')
+        translated = GoogleTranslator(source='english', target='tamil').translate_file('/content/mydrive/MyDrive/Krypthon-codes/audio.txt')
     elif lang == 'hi':
-        translated = GoogleTranslator(source='english', target='hindi').translate_file('/content/audio.txt')
+        translated = GoogleTranslator(source='english', target='hindi').translate_file('/content/mydrive/MyDrive/Krypthon-codes/audio.txt')
 
 
     with open ('/content/mydrive/MyDrive/Krypthon-codes/translated.txt', 'w') as file:  
@@ -42,4 +35,4 @@ def dub(source, lang):
     final_audio = audio_clip
     final_clip = video_clip.set_audio(final_audio)
 
-    final_clip.write_videofile("/content/mydrive/MyDrive/Krypthon-codes/final.mp4")
+    final_clip.resize(width=480).write_videofile("/content/mydrive/MyDrive/Krypthon-codes/final.mp4", logger = None, threads=15)
