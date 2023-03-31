@@ -6,7 +6,7 @@ Our idea aims to address the vernacular gap that exists in current education and
 
 ## How to run the code
 1. Go to ngrok.com and create an account to support streamlit in Google Colab
-2. Run all the cells in Terminal.ipynb
+2. Update your ngrok access token and run all the cells in Terminal.ipynb
 3. Click on the hosted link to open the streamlit app
 
 ## Link to final presentation
